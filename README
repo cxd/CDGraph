@@ -1,0 +1,4 @@
+CDGraph
+
+This project provides a simple graph data structure in Objective-C.
+It is shared by the projects CDQuartzCocoaLib and CxdMath.
