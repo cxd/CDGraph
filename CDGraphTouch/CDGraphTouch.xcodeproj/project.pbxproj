@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62168BAB1235050E000941F2 /* CDEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = 62168B991235050E000941F2 /* CDEdge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62168BAC1235050E000941F2 /* CDEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 62168B9A1235050E000941F2 /* CDEdge.m */; };
+		62168BAD1235050E000941F2 /* CDEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 62168B9B1235050E000941F2 /* CDEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62168BAE1235050E000941F2 /* CDGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 62168B9C1235050E000941F2 /* CDGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62168BAF1235050E000941F2 /* CDGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 62168B9D1235050E000941F2 /* CDGraph.m */; };
+		62168BB01235050E000941F2 /* CDGraphLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 62168B9E1235050E000941F2 /* CDGraphLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62168BB11235050E000941F2 /* CDGraphTraversal.h in Headers */ = {isa = PBXBuildFile; fileRef = 62168B9F1235050E000941F2 /* CDGraphTraversal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62168BB21235050E000941F2 /* CDGraphTraversal.m in Sources */ = {isa = PBXBuildFile; fileRef = 62168BA01235050E000941F2 /* CDGraphTraversal.m */; };
+		62168BB31235050E000941F2 /* CDGraphVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 62168BA11235050E000941F2 /* CDGraphVisitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62168BB41235050E000941F2 /* CDGraphVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 62168BA21235050E000941F2 /* CDGraphVisitor.m */; };
+		62168BB51235050E000941F2 /* CDLinkedNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62168BA31235050E000941F2 /* CDLinkedNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62168BB61235050E000941F2 /* CDLinkedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62168BA41235050E000941F2 /* CDLinkedNode.m */; };
+		62168BB71235050E000941F2 /* CDNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 62168BA51235050E000941F2 /* CDNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62168BB81235050E000941F2 /* CDNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 62168BA61235050E000941F2 /* CDNode.m */; };
+		62168BB91235050E000941F2 /* CDQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 62168BA71235050E000941F2 /* CDQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62168BBA1235050E000941F2 /* CDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 62168BA81235050E000941F2 /* CDQueue.m */; };
+		62168BBB1235050E000941F2 /* CDStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 62168BA91235050E000941F2 /* CDStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62168BBC1235050E000941F2 /* CDStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 62168BAA1235050E000941F2 /* CDStack.m */; };
+		AA747D9F0F9514B9006C5449 /* CDGraphTouch_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CDGraphTouch_Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		62168B991235050E000941F2 /* CDEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDEdge.h; path = ../CDGraph/CDEdge.h; sourceTree = SOURCE_ROOT; };
+		62168B9A1235050E000941F2 /* CDEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDEdge.m; path = ../CDGraph/CDEdge.m; sourceTree = SOURCE_ROOT; };
+		62168B9B1235050E000941F2 /* CDEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDEnums.h; path = ../CDGraph/CDEnums.h; sourceTree = SOURCE_ROOT; };
+		62168B9C1235050E000941F2 /* CDGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDGraph.h; path = ../CDGraph/CDGraph.h; sourceTree = SOURCE_ROOT; };
+		62168B9D1235050E000941F2 /* CDGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDGraph.m; path = ../CDGraph/CDGraph.m; sourceTree = SOURCE_ROOT; };
+		62168B9E1235050E000941F2 /* CDGraphLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDGraphLib.h; path = ../CDGraph/CDGraphLib.h; sourceTree = SOURCE_ROOT; };
+		62168B9F1235050E000941F2 /* CDGraphTraversal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDGraphTraversal.h; path = ../CDGraph/CDGraphTraversal.h; sourceTree = SOURCE_ROOT; };
+		62168BA01235050E000941F2 /* CDGraphTraversal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDGraphTraversal.m; path = ../CDGraph/CDGraphTraversal.m; sourceTree = SOURCE_ROOT; };
+		62168BA11235050E000941F2 /* CDGraphVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDGraphVisitor.h; path = ../CDGraph/CDGraphVisitor.h; sourceTree = SOURCE_ROOT; };
+		62168BA21235050E000941F2 /* CDGraphVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDGraphVisitor.m; path = ../CDGraph/CDGraphVisitor.m; sourceTree = SOURCE_ROOT; };
+		62168BA31235050E000941F2 /* CDLinkedNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDLinkedNode.h; path = ../CDGraph/CDLinkedNode.h; sourceTree = SOURCE_ROOT; };
+		62168BA41235050E000941F2 /* CDLinkedNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDLinkedNode.m; path = ../CDGraph/CDLinkedNode.m; sourceTree = SOURCE_ROOT; };
+		62168BA51235050E000941F2 /* CDNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDNode.h; path = ../CDGraph/CDNode.h; sourceTree = SOURCE_ROOT; };
+		62168BA61235050E000941F2 /* CDNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDNode.m; path = ../CDGraph/CDNode.m; sourceTree = SOURCE_ROOT; };
+		62168BA71235050E000941F2 /* CDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDQueue.h; path = ../CDGraph/CDQueue.h; sourceTree = SOURCE_ROOT; };
+		62168BA81235050E000941F2 /* CDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDQueue.m; path = ../CDGraph/CDQueue.m; sourceTree = SOURCE_ROOT; };
+		62168BA91235050E000941F2 /* CDStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDStack.h; path = ../CDGraph/CDStack.h; sourceTree = SOURCE_ROOT; };
+		62168BAA1235050E000941F2 /* CDStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDStack.m; path = ../CDGraph/CDStack.m; sourceTree = SOURCE_ROOT; };
+		AA747D9E0F9514B9006C5449 /* CDGraphTouch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGraphTouch_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libCDGraphTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCDGraphTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libCDGraphTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* CDGraphTouch */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = CDGraphTouch;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				62168B991235050E000941F2 /* CDEdge.h */,
+				62168B9A1235050E000941F2 /* CDEdge.m */,
+				62168B9B1235050E000941F2 /* CDEnums.h */,
+				62168B9C1235050E000941F2 /* CDGraph.h */,
+				62168B9D1235050E000941F2 /* CDGraph.m */,
+				62168B9E1235050E000941F2 /* CDGraphLib.h */,
+				62168B9F1235050E000941F2 /* CDGraphTraversal.h */,
+				62168BA01235050E000941F2 /* CDGraphTraversal.m */,
+				62168BA11235050E000941F2 /* CDGraphVisitor.h */,
+				62168BA21235050E000941F2 /* CDGraphVisitor.m */,
+				62168BA31235050E000941F2 /* CDLinkedNode.h */,
+				62168BA41235050E000941F2 /* CDLinkedNode.m */,
+				62168BA51235050E000941F2 /* CDNode.h */,
+				62168BA61235050E000941F2 /* CDNode.m */,
+				62168BA71235050E000941F2 /* CDQueue.h */,
+				62168BA81235050E000941F2 /* CDQueue.m */,
+				62168BA91235050E000941F2 /* CDStack.h */,
+				62168BAA1235050E000941F2 /* CDStack.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* CDGraphTouch_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* CDGraphTouch_Prefix.pch in Headers */,
+				62168BAB1235050E000941F2 /* CDEdge.h in Headers */,
+				62168BAD1235050E000941F2 /* CDEnums.h in Headers */,
+				62168BAE1235050E000941F2 /* CDGraph.h in Headers */,
+				62168BB01235050E000941F2 /* CDGraphLib.h in Headers */,
+				62168BB11235050E000941F2 /* CDGraphTraversal.h in Headers */,
+				62168BB31235050E000941F2 /* CDGraphVisitor.h in Headers */,
+				62168BB51235050E000941F2 /* CDLinkedNode.h in Headers */,
+				62168BB71235050E000941F2 /* CDNode.h in Headers */,
+				62168BB91235050E000941F2 /* CDQueue.h in Headers */,
+				62168BBB1235050E000941F2 /* CDStack.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* CDGraphTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CDGraphTouch" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CDGraphTouch;
+			productName = CDGraphTouch;
+			productReference = D2AAC07E0554694100DB518D /* libCDGraphTouch.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CDGraphTouch" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* CDGraphTouch */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* CDGraphTouch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62168BAC1235050E000941F2 /* CDEdge.m in Sources */,
+				62168BAF1235050E000941F2 /* CDGraph.m in Sources */,
+				62168BB21235050E000941F2 /* CDGraphTraversal.m in Sources */,
+				62168BB41235050E000941F2 /* CDGraphVisitor.m in Sources */,
+				62168BB61235050E000941F2 /* CDLinkedNode.m in Sources */,
+				62168BB81235050E000941F2 /* CDNode.m in Sources */,
+				62168BBA1235050E000941F2 /* CDQueue.m in Sources */,
+				62168BBC1235050E000941F2 /* CDStack.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/CDGraphTouch.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CDGraphTouch_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = CDGraphTouch;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/CDGraphTouch.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CDGraphTouch_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = CDGraphTouch;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "CDGraphTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "CDGraphTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
