@@ -70,7 +70,7 @@
 
 -(void)traverseDepthFirst
 {
-	if ([graph.nodes count] == 0)
+	if ([self.graph.nodes count] == 0)
 		return;
 	CDNode *walker;
 	CDNode *node;
@@ -83,7 +83,7 @@
 	CDStack *stack = [[CDStack alloc] init];
 	[stack retain];
 	
-	for(node in walker.neighbours)
+	for(node in self.graph.nodes)
 	{
 		// process nodes that have not been included.
 		if (node.visited)
