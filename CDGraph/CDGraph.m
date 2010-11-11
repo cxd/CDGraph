@@ -172,6 +172,21 @@
 }
 
 /**
+ Find the index of the given node.
+ **/
+-(int)findIndex:(CDNode *)node
+{
+	int i = 0;
+	for(CDNode *other in self.nodes)
+	{
+		if ([other isEqual:(id)node])
+			return i;
+		i++;
+	}
+	return -1;
+}
+
+/**
  Find all edges from this node.
  **/
 -(NSMutableArray *)findEdges:(CDNode *)nodeFrom
@@ -208,8 +223,37 @@
 -(void) encodeWithCoder: (NSCoder *) encoder
 {
 	[encoder encodeBool: self.isBidirectional forKey: @"isBidirectional"];
+	// save all nodes.
 	[encoder encodeObject: (id) self.nodes forKey: @"nodes"];
-	[encoder encodeObject: (id) self.edges forKey: @"edges"];
+	// create a set of persisted edges.
+	int i=0;
+	NSMutableArray *adjacentSet = [[NSMutableArray alloc] init];
+	for(CDNode *node in self.nodes)
+	{
+		[adjacentSet addObjectsFromArray:
+		 [self convertNeigboursForEncoding:node atIndex:i]];
+		i++;
+	}
+	[encoder encodeObject:adjacentSet forKey:@"adjacentSet"];
+}
+
+/**
+ Convert all the neighbours into a persistent edge.
+ **/
+-(NSMutableArray *)convertNeigboursForEncoding:(CDNode *)node atIndex:(int)n
+{
+	NSMutableArray *set = [[NSMutableArray alloc] init];
+	for(CDNode *next in node.neighbours)
+	{
+		int i = [self findIndex:next];
+		if (i < 0)
+			continue;
+		CDPersistedEdge *edge = [[CDPersistedEdge alloc] init];
+		edge.sourceIdx = n;
+		edge.targetIdx = i;
+		[set addObject:edge];
+	}
+	return set;
 }
 
 -(id) initWithCoder: (NSCoder *) decoder 
@@ -217,7 +261,14 @@
 
 	self.isBidirectional = [decoder decodeBoolForKey: @"isBidirectional"];
 	self.nodes = [[decoder decodeObjectForKey: @"nodes"] retain];
-	self.edges = [[decoder decodeObjectForKey: @"edges"] retain];
+	self.edges = [[NSMutableArray alloc] init];
+	NSMutableArray* adjacentSet = [decoder decodeObjectForKey:@"adjacentSet"];
+	for(CDPersistedEdge *p in adjacentSet)
+	{
+		CDNode *source = [self.nodes objectAtIndex:p.sourceIdx];
+		CDNode *dest = [self.nodes objectAtIndex:p.targetIdx];
+		[self connect:source to:dest];
+	}
 	return self;
 }
 

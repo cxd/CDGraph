@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CDNode.h"
 #import "CDEdge.h"
+#import "CDPersistedEdge.h"
 
 /*
  TODO: implement alloc and dealloc methods
@@ -76,4 +77,8 @@
 -(id) initWithCoder: (NSCoder *) decoder;
 -(id) copyWithZone: (NSZone *)zone;
 
+/**
+ Convert all the neighbours into a persistent edge.
+ **/
+-(NSMutableArray *)convertNeigboursForEncoding:(CDNode *)node atIndex:(int)n;
 @end

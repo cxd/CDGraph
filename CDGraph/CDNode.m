@@ -78,13 +78,13 @@
 -(void) encodeWithCoder: (NSCoder *)encoder
 {
 	[encoder encodeObject: (id) data forKey: @"data"];
-	[encoder encodeObject:(id)neighbours forKey: @"neighbours"];
 }
 
 -(id) initWithCoder: (NSCoder *) decoder
 {
 	data = [[decoder decodeObjectForKey:@"data"] retain];
-	neighbours = [[decoder decodeObjectForKey:@"neighbours"] retain];
+	neighbours = [[NSMutableArray alloc] init];
+	[neighbours retain];
 	return self;
 }
 
