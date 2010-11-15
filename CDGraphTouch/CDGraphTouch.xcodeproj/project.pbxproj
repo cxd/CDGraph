@@ -25,6 +25,8 @@
 		62168BBA1235050E000941F2 /* CDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 62168BA81235050E000941F2 /* CDQueue.m */; };
 		62168BBB1235050E000941F2 /* CDStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 62168BA91235050E000941F2 /* CDStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62168BBC1235050E000941F2 /* CDStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 62168BAA1235050E000941F2 /* CDStack.m */; };
+		622D1E26128D5AF200D97241 /* CDPersistedEdge.h in Headers */ = {isa = PBXBuildFile; fileRef = 622D1E24128D5AF200D97241 /* CDPersistedEdge.h */; };
+		622D1E27128D5AF200D97241 /* CDPersistedEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 622D1E25128D5AF200D97241 /* CDPersistedEdge.m */; };
 		AA747D9F0F9514B9006C5449 /* CDGraphTouch_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* CDGraphTouch_Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,8 @@
 		62168BA81235050E000941F2 /* CDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDQueue.m; path = ../CDGraph/CDQueue.m; sourceTree = SOURCE_ROOT; };
 		62168BA91235050E000941F2 /* CDStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDStack.h; path = ../CDGraph/CDStack.h; sourceTree = SOURCE_ROOT; };
 		62168BAA1235050E000941F2 /* CDStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDStack.m; path = ../CDGraph/CDStack.m; sourceTree = SOURCE_ROOT; };
+		622D1E24128D5AF200D97241 /* CDPersistedEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDPersistedEdge.h; path = ../CDGraph/CDPersistedEdge.h; sourceTree = SOURCE_ROOT; };
+		622D1E25128D5AF200D97241 /* CDPersistedEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDPersistedEdge.m; path = ../CDGraph/CDPersistedEdge.m; sourceTree = SOURCE_ROOT; };
 		AA747D9E0F9514B9006C5449 /* CDGraphTouch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGraphTouch_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libCDGraphTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCDGraphTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +99,8 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				622D1E24128D5AF200D97241 /* CDPersistedEdge.h */,
+				622D1E25128D5AF200D97241 /* CDPersistedEdge.m */,
 				62168B991235050E000941F2 /* CDEdge.h */,
 				62168B9A1235050E000941F2 /* CDEdge.m */,
 				62168B9B1235050E000941F2 /* CDEnums.h */,
@@ -143,6 +149,7 @@
 				62168BB71235050E000941F2 /* CDNode.h in Headers */,
 				62168BB91235050E000941F2 /* CDQueue.h in Headers */,
 				62168BBB1235050E000941F2 /* CDStack.h in Headers */,
+				622D1E26128D5AF200D97241 /* CDPersistedEdge.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +204,7 @@
 				62168BB81235050E000941F2 /* CDNode.m in Sources */,
 				62168BBA1235050E000941F2 /* CDQueue.m in Sources */,
 				62168BBC1235050E000941F2 /* CDStack.m in Sources */,
+				622D1E27128D5AF200D97241 /* CDPersistedEdge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

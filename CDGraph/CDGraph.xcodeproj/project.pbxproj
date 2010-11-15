@@ -10,6 +10,10 @@
 		6201CA0910552226000360C5 /* CDGraphLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 6201CA0810552226000360C5 /* CDGraphLib.h */; };
 		6201CA0A10552226000360C5 /* CDGraphLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 6201CA0810552226000360C5 /* CDGraphLib.h */; };
 		6227FCB90F28756500D8D09F /* CDTestGraphClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6227FCB80F28756500D8D09F /* CDTestGraphClient.m */; };
+		623C81D8129122A6008CCF9A /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 623C81D7129122A6008CCF9A /* LICENSE.txt */; };
+		623C81D9129122A6008CCF9A /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 623C81D7129122A6008CCF9A /* LICENSE.txt */; };
+		623C827C12912605008CCF9A /* README in Resources */ = {isa = PBXBuildFile; fileRef = 623C827B12912605008CCF9A /* README */; };
+		623C827D12912605008CCF9A /* README in Resources */ = {isa = PBXBuildFile; fileRef = 623C827B12912605008CCF9A /* README */; };
 		6240D6030E4B118500C34154 /* CDNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 6240D6010E4B118500C34154 /* CDNode.h */; };
 		6240D6040E4B118500C34154 /* CDNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6240D6020E4B118500C34154 /* CDNode.m */; };
 		6240D6160E4B16BE00C34154 /* CDGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 6240D6140E4B16BE00C34154 /* CDGraph.h */; };
@@ -103,6 +107,8 @@
 		6227FCB70F28756500D8D09F /* CDTestGraphClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTestGraphClient.h; sourceTree = "<group>"; };
 		6227FCB80F28756500D8D09F /* CDTestGraphClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTestGraphClient.m; sourceTree = "<group>"; };
 		623A1C5612335A9400160A95 /* CDGraph-Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDGraph-Info copy.plist"; sourceTree = "<group>"; };
+		623C81D7129122A6008CCF9A /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		623C827B12912605008CCF9A /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		6240D6010E4B118500C34154 /* CDNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDNode.h; sourceTree = "<group>"; };
 		6240D6020E4B118500C34154 /* CDNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDNode.m; sourceTree = "<group>"; };
 		6240D6140E4B16BE00C34154 /* CDGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDGraph.h; sourceTree = "<group>"; };
@@ -197,6 +203,7 @@
 		0867D691FE84028FC02AAC07 /* CDGraph */ = {
 			isa = PBXGroup;
 			children = (
+				623C827B12912605008CCF9A /* README */,
 				62B539B80F3EE023005D4DA0 /* Headers */,
 				626F3A670F248D8C00F566C4 /* Console */,
 				62E9DB080EEA724800DCE36C /* Test Cases */,
@@ -211,6 +218,7 @@
 				626F3A7C0F2490D400F566C4 /* Foundation.framework */,
 				62B545860F3D8A410027ED8F /* CDGraph-Info.plist */,
 				623A1C5612335A9400160A95 /* CDGraph-Info copy.plist */,
+				623C81D7129122A6008CCF9A /* LICENSE.txt */,
 			);
 			name = CDGraph;
 			sourceTree = "<group>";
@@ -482,6 +490,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623C81D8129122A6008CCF9A /* LICENSE.txt in Resources */,
+				623C827C12912605008CCF9A /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +499,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623C81D9129122A6008CCF9A /* LICENSE.txt in Resources */,
+				623C827D12912605008CCF9A /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -52,12 +52,13 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 308307039;
-			PBXWorkspaceStateSaveDate = 308307039;
+			PBXPerProjectTemplateStateSaveDate = 311502398;
+			PBXWorkspaceStateSaveDate = 311502398;
 		};
 		perUserProjectItems = {
-			622BE47B1260652C00B6AB81 /* PBXTextBookmark */ = 622BE47B1260652C00B6AB81 /* PBXTextBookmark */;
-			622BE47C1260652C00B6AB81 /* PBXTextBookmark */ = 622BE47C1260652C00B6AB81 /* PBXTextBookmark */;
+			622D1EA6128D6ACC00D97241 = 622D1EA6128D6ACC00D97241 /* PBXTextBookmark */;
+			622D1EA8128D6ACC00D97241 = 622D1EA8128D6ACC00D97241 /* PBXTextBookmark */;
+			6276A8391290FE870013EA5C = 6276A8391290FE870013EA5C /* PBXTextBookmark */;
 		};
 		sourceControlManager = 62168B9712350500000941F2 /* Source Control */;
 		userBuildSettings = {
@@ -79,16 +80,23 @@
 	};
 	62168B991235050E000941F2 /* CDEdge.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {554, 494}}";
+			sepNavIntBoundsRect = "{{0, 0}, {554, 481}}";
 			sepNavSelRange = "{119, 0}";
-			sepNavVisRange = "{0, 172}";
+			sepNavVisRange = "{3, 169}";
 		};
 	};
 	62168B9C1235050E000941F2 /* CDGraph.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {474, 897}}";
-			sepNavSelRange = "{121, 0}";
-			sepNavVisRange = "{0, 308}";
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 897}}";
+			sepNavSelRange = "{72, 1481}";
+			sepNavVisRange = "{0, 1656}";
+		};
+	};
+	62168B9E1235050E000941F2 /* CDGraphLib.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 325}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1693}";
 		};
 	};
 	62168B9F1235050E000941F2 /* CDGraphTraversal.h */ = {
@@ -114,9 +122,9 @@
 	};
 	62168BA51235050E000941F2 /* CDNode.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {439, 702}}";
+			sepNavIntBoundsRect = "{{0, 0}, {5304, 663}}";
 			sepNavSelRange = "{120, 0}";
-			sepNavVisRange = "{0, 252}";
+			sepNavVisRange = "{0, 1644}";
 		};
 	};
 	62168BA71235050E000941F2 /* CDQueue.h */ = {
@@ -133,24 +141,34 @@
 			sepNavVisRange = "{0, 217}";
 		};
 	};
-	622BE47B1260652C00B6AB81 /* PBXTextBookmark */ = {
+	622D1EA6128D6ACC00D97241 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 62168B991235050E000941F2 /* CDEdge.h */;
 		name = "CDEdge.h: 7";
 		rLen = 0;
-		rLoc = 119;
+		rLoc = 1552;
 		rType = 0;
-		vrLen = 172;
+		vrLen = 169;
+		vrLoc = 3;
+	};
+	622D1EA8128D6ACC00D97241 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 62168B9C1235050E000941F2 /* CDGraph.h */;
+		name = "CDGraph.h: 11";
+		rLen = 0;
+		rLoc = 1626;
+		rType = 0;
+		vrLen = 448;
 		vrLoc = 0;
 	};
-	622BE47C1260652C00B6AB81 /* PBXTextBookmark */ = {
+	6276A8391290FE870013EA5C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 62168B991235050E000941F2 /* CDEdge.h */;
-		name = "CDEdge.h: 7";
+		fRef = 62168B9C1235050E000941F2 /* CDGraph.h */;
+		name = "CDGraph.h: 5";
 		rLen = 0;
-		rLoc = 119;
+		rLoc = 46;
 		rType = 0;
-		vrLen = 172;
+		vrLen = 446;
 		vrLoc = 0;
 	};
 	D2AAC07D0554694100DB518D /* CDGraphTouch */ = {
