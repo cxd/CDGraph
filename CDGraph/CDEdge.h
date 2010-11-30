@@ -29,10 +29,12 @@
 
 /**
  * Source node.
+ Weak reference.
  **/
 @property(assign) CDNode *source;
 /**
  * Target node.
+ Weak Reference.
  **/
 @property(assign) CDNode *target;
 /**

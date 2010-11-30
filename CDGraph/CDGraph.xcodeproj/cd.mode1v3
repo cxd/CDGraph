@@ -277,8 +277,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>25</integer>
-									<integer>17</integer>
+									<integer>3</integer>
+									<integer>2</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -320,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CDStack.m</string>
+								<string>CDEdge.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,18 +328,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>CDStack.m</string>
+										<string>CDEdge.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>62CAC3FE12A4B5BF0031379E</string>
+										<string>62CAC44612A4C7EB0031379E</string>
 										<key>history</key>
 										<array>
 											<string>626F3A420F248CC400F566C4</string>
 											<string>623119D610D4B76300D3E904</string>
 											<string>623C81E112912474008CCF9A</string>
 											<string>623C81E212912474008CCF9A</string>
-											<string>623C81E312912474008CCF9A</string>
 											<string>623C82AC1291280D008CCF9A</string>
 											<string>623C82AD1291280D008CCF9A</string>
 											<string>623C82B01291280D008CCF9A</string>
@@ -348,7 +347,6 @@
 											<string>623C82B31291280D008CCF9A</string>
 											<string>623C82B51291280D008CCF9A</string>
 											<string>623C82B61291280D008CCF9A</string>
-											<string>623C82BD1291280D008CCF9A</string>
 											<string>623C82C01291280D008CCF9A</string>
 											<string>623C82C11291280D008CCF9A</string>
 											<string>623C82C21291280D008CCF9A</string>
@@ -363,14 +361,16 @@
 											<string>62CAC2D912A494E20031379E</string>
 											<string>62CAC2DA12A494E20031379E</string>
 											<string>62CAC2DB12A494E20031379E</string>
-											<string>62CAC2DC12A494E20031379E</string>
 											<string>62CAC2DD12A494E20031379E</string>
 											<string>62CAC2DF12A494E20031379E</string>
 											<string>62CAC3AB12A4B25E0031379E</string>
 											<string>62CAC3AC12A4B25E0031379E</string>
 											<string>62CAC3D812A4B4BF0031379E</string>
 											<string>62CAC3E612A4B55F0031379E</string>
-											<string>62CAC3E712A4B55F0031379E</string>
+											<string>62CAC42612A4C66A0031379E</string>
+											<string>62CAC42D12A4C6DC0031379E</string>
+											<string>62CAC42E12A4C6DC0031379E</string>
+											<string>62CAC42F12A4C6DC0031379E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -567,8 +567,8 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>6240D66A0E4B205D00C34154</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>/Users/cd/Projects/CDGraph/CDGraph/CDGraph.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -588,14 +588,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CDGraphTraversal.m</string>
+								<string>CDStack.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -612,6 +610,8 @@
 							<string>292pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -662,7 +662,7 @@
 			<key>WindowToolGUID</key>
 			<string>6240D66A0E4B205D00C34154</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

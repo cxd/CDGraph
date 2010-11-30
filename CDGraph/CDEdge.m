@@ -28,8 +28,6 @@
 
 -(void)dealloc
 {
-	[source autorelease];
-	[target autorelease];
 	[super dealloc];
 }
 
