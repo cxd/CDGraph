@@ -32,15 +32,14 @@
 -(id)initWithData:(NSObject *)objData
 {
 	[super init];
-	data = objData;
-	[data retain];
+	self.data = objData;
 	return self;
 }
 
 -(void)dealloc
 {
-	[data autorelease];
-	[link autorelease];
+	[self.data autorelease];
+	[self.link autorelease];
 	[super dealloc];
 }
 

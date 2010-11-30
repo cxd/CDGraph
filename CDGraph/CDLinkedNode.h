@@ -23,8 +23,8 @@
 	CDLinkedNode * link;
 }
 
-@property(assign) NSObject *data;
-@property(assign) CDLinkedNode *link;
+@property(retain) NSObject *data;
+@property(retain) CDLinkedNode *link;
 
 -(id)initWithData:(NSObject *)objData;
 -(void)dealloc;

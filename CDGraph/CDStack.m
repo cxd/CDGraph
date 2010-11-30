@@ -22,6 +22,7 @@
 
 @implementation CDStack
 
+@synthesize root;
 
 -(void)dealloc
 {
@@ -31,36 +32,33 @@
 
 -(void)push:(NSObject *)data 
 {
-	[data retain];
-	CDLinkedNode *tmp = [[CDLinkedNode alloc] initWithData:(id)data];
-	[tmp retain];
-	if (root == nil)
+	CDLinkedNode *tmp = [[CDLinkedNode alloc] initWithData:data];
+	if (self.root == nil)
 	{
-		root = tmp;
+		self.root = tmp;
 		return;
 	}
-	tmp.link = root;
-	root = tmp;
+	tmp.link = self.root;
+	self.root = tmp;
 }
 
 -(NSObject *)pop
 {
 	CDLinkedNode *tmp = root;
-	root = tmp.link;
+	self.root = tmp.link;
 	NSObject* data = tmp.data;
-	[data autorelease];
 	[tmp autorelease];
 	return data;
 }
 
 -(NSObject *)top
 {
-	return root.data;
+	return self.root.data;
 }
 
 -(int) count
 {
-	CDLinkedNode *next = root;
+	CDLinkedNode *next = self.root;
 	int cnt = 0;
 	while(next != nil)
 	{
@@ -72,7 +70,7 @@
 
 -(void)clear
 {
-	while(root != nil)
+	while(self.root != nil)
 	{
 		[self pop];
 	}
@@ -80,7 +78,7 @@
 
 -(BOOL)isEmpty
 {
-	return (root == nil);	
+	return (self.root == nil);	
 }
 
 @end

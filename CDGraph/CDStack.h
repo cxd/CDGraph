@@ -21,6 +21,8 @@
 	CDLinkedNode* root;
 }
 
+@property(retain) CDLinkedNode* root;
+
 -(void)dealloc;
 /**
  Push object data onto the top of the stack.
