@@ -50,15 +50,14 @@
 
 -(void)dealloc
 {
-	[graph autorelease];
+	[self.graph autorelease];
 	[super dealloc];	
 }
 
 -(void)traverse:(id <CDGraphVisitor>) visitor graphInstance:(CDGraph *)g
 {
 	visitorInstance = visitor;
-	graph = g;
-	[graph retain];
+	self.graph = g;
 	switch (order) {
 		case DepthFirst:
 			[self traverseDepthFirst];
@@ -67,13 +66,12 @@
 			[self traverseBreadthFirst];
 			break;
 	}
-	[graph autorelease];
 }
 
 -(void)traverse:(CDTraverseOrder) o visitorInstance:(id <CDGraphVisitor>) visitor graphInstance:(CDGraph *) g
 {
 	self.order = order;
-	[self traverse: visitor graphInstance:graph];
+	[self traverse: visitor graphInstance:g];
 }
 
 
@@ -88,9 +86,7 @@
 		node.visited = NO;	
 	}
 	NSMutableSet *set = [[NSMutableSet alloc] init];
-	[set retain];
 	CDStack *stack = [[CDStack alloc] init];
-	[stack retain];
 	
 	for(node in self.graph.nodes)
 	{
@@ -119,13 +115,13 @@
 		}
 	}
 	[set removeAllObjects];
-	[stack release];
-	[set release];
+	[stack autorelease];
+	[set autorelease];
 }
 
 -(void)traverseBreadthFirst
 {
-	if ([graph.nodes count] == 0)
+	if ([self.graph.nodes count] == 0)
 		return;
 	CDNode *node;
 	for(node in self.graph.nodes)
@@ -133,10 +129,8 @@
 		node.visited = NO;	
 	}
 	NSMutableSet *set = [[NSMutableSet alloc] init];
-	[set retain];
 	
 	CDQueue *queue = [[CDQueue alloc] init];
-	[queue retain];
 	
 	for(node in graph.nodes)
 	{
@@ -165,8 +159,8 @@
 	}
 	[queue clear];
 	[set removeAllObjects];
-	[set release];
-	[queue release];
+	[set autorelease];
+	[queue autorelease];
 }
 
 

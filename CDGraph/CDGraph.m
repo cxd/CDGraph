@@ -55,11 +55,10 @@
 
 -(CDNode *)add:(NSObject *)objData {
 	id node = [[CDNode alloc] init];
-	[node retain];
 	[node setData:(id) objData];
 	// add it to the array.
 	[self.nodes addObject:node];
-	return node;
+	return [node autorelease];
 }
 
 /**
@@ -68,7 +67,6 @@
 -(CDNode *)remove:(NSPredicate *) predicate {
 	CDNode* match = [self find:predicate];
 	if (match != nil) {
-		[match autorelease];
 		// disconnect the node from any neighbours it might have.
 		for(CDNode *neighbour in match.neighbours)
 		{
@@ -137,18 +135,19 @@
 
 -(CDEdge *)connect:(CDNode *)nodeFrom to:(CDNode *)nodeTo {
 	CDEdge *edge = [[CDEdge alloc] init];
-	[edge retain];
 	edge.source = nodeFrom;
 	edge.target = nodeTo;
 	[self.edges addObject:(id)edge];
 	[nodeFrom addNeighbour:(CDNode *) nodeTo];
 	CDEdge* tmp =(CDEdge*) edge;
+	[edge autorelease];
 	if (self.isBidirectional) {
 		edge = [[CDEdge alloc] init];
 		edge.source = nodeTo;
 		edge.target = nodeFrom;
 		[self.edges addObject:(id)edge];
 		[nodeTo addNeighbour:(CDNode*)nodeFrom];
+		[edge autorelease];
 	}
 	return (CDEdge*)tmp;
 }
@@ -159,13 +158,11 @@
 	CDEdge* tmp = (CDEdge*)edge;
 	[nodeFrom.neighbours removeObject:(id)nodeTo];
 	[self.edges removeObject:(id)edge];
-	[edge release];
 	if (self.isBidirectional) {
 		edge = [self findEdge:nodeTo to:nodeFrom];
 		if (edge == nil) return tmp;
 		[nodeTo.neighbours removeObject:(id)nodeFrom];
 		[self.edges removeObject:(id)edge];
-		[edge release];
 	}
 	return tmp;
 }
@@ -208,7 +205,7 @@
 			[set addObject:edge];	
 		}
 	}
-	return set;
+	return [set autorelease];
 }
 
 /**
@@ -224,7 +221,7 @@
 			[set addObject:edge];	
 		}
 	}
-	return set;
+	return [set autorelease];
 }
 
 
@@ -244,6 +241,7 @@
 		i++;
 	}
 	[encoder encodeObject:adjacentSet forKey:@"adjacentSet"];
+	[adjacentSet autorelease];
 }
 
 /**
@@ -261,8 +259,9 @@
 		edge.sourceIdx = n;
 		edge.targetIdx = i;
 		[set addObject:edge];
+		[edge autorelease];
 	}
-	return set;
+	return [set autorelease];
 }
 
 -(id) initWithCoder: (NSCoder *) decoder 
@@ -286,7 +285,7 @@
 {
 	NSData *archive = [NSKeyedArchiver archivedDataWithRootObject: self];
 	CDGraph *copy = [NSKeyedUnarchiver unarchiveObjectWithData:archive];
-	return copy;
+	return [copy retain];
 }
 
 @end

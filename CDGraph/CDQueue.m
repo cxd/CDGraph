@@ -49,7 +49,7 @@
 		return nil;
 	CDLinkedNode *tmp = root;
 	root = root.link;
-	[tmp release];
+	[tmp autorelease];
 	return tmp.data;
 }
 

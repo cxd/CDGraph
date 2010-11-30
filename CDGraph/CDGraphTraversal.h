@@ -32,7 +32,7 @@
 
 
 @property(assign) CDTraverseOrder order;
-@property(assign) CDGraph * graph;
+@property(retain) CDGraph * graph;
 @property(assign) id <CDGraphVisitor> visitorInstance;
 
 -(void)dealloc;

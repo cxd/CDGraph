@@ -42,7 +42,7 @@
 	
 }
 
-@property(assign) NSObject *data;
+@property(retain) NSObject *data;
 @property(assign) NSMutableArray *neighbours;
 @property(assign) BOOL visited;
 -(void)dealloc;

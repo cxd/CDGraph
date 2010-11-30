@@ -49,7 +49,7 @@
 	root = tmp.link;
 	NSObject* data = tmp.data;
 	[data autorelease];
-	[tmp release];
+	[tmp autorelease];
 	return data;
 }
 

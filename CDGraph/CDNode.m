@@ -102,7 +102,7 @@
 {
 	NSData *archive = [NSKeyedArchiver archivedDataWithRootObject:(id)self];
 	CDNode * copy = [NSKeyedUnarchiver unarchiveObjectWithData: archive];
-	return copy;
+	return [copy retain];
 }
 
 
