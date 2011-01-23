@@ -36,16 +36,8 @@
 
 -(void)dealloc 
 {
-	for(CDEdge* edge in self.edges)
-	{
-		[edge autorelease];	
-	}
 	[self.edges removeAllObjects];
 	[self.edges autorelease];
-	for(CDNode* node in self.nodes)
-	{
-		[node autorelease];	
-	}
 	[self.nodes removeAllObjects];
 	[self.nodes autorelease];
 	[super dealloc];
