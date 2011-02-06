@@ -110,6 +110,23 @@
 	return nil;
 }
 
+
+
+/**
+ Find a node using a block predicate.
+ **/
+-(CDNode *)findWith:(BOOL (^)(CDNode *node)) predicate
+{
+	CDNode *test;
+	for(test in self.nodes) {
+		if (predicate(test)) {
+			return test;	
+		}
+	}
+	return nil;
+}
+
+
 /**
  Find a node using testing for whether the id of the supplied
  object is equal to the data objects id in the node.

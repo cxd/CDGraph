@@ -20,6 +20,7 @@
 #import "CDEdge.h"
 #import "CDPersistedEdge.h"
 
+
 /*
  TODO: implement alloc and dealloc methods
  to initialise arrays and release arrays containing existing data.
@@ -59,6 +60,11 @@
  Find a node using a predicate.
  **/
 -(CDNode*)find:(NSPredicate *)predicate;
+
+/**
+ Find a node using a block predicate.
+ **/
+-(CDNode *)findWith:(BOOL (^)(CDNode *node)) predicate;
 
 /**
  Find a node using testing for whether the id of the supplied
